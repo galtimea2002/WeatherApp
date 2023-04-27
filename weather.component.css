@@ -1,0 +1,73 @@
+
+.mycontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7fe5e5;
+    padding: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    background-color: #f8f8ff;
+    border-bottom: none;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #008080;
+    text-align: center; /* center the city name */
+  }
+  
+  .card-header img {
+    width: 100px;
+    height: 100px;
+    background-color: #c9c9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* center the weather image */
+  }
+  
+  .card-header img img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .card-body {
+    padding: 20px;
+    background-color: rgb(177, 235, 229);
+  }
+  
+  .card-text {
+    margin: 10px 0;
+    color: #008080;
+  }
+
+  .summary-text {
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: 2px 2px #c9c9c9;
+    -webkit-text-stroke: 0.5px #fff;
+    color: #008080;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+

@@ -1,0 +1,47 @@
+<div class="container">
+  <form action="" class="center-form">
+    <input type="text" placeholder="Enter a city" [(ngModel)]="searchCity" name="q" class="center-input">
+    <button mat-button (click)="ngOnInit()" class="center-button">Enter</button>
+  </form>
+</div>
+
+
+<style>
+  .center-form {
+    text-align: center; /* Center the form horizontally */
+  }
+  
+  .center-input {
+    display: block; /* Set the input field to a block element */
+    margin: 0 auto; /* Center the input field horizontally */
+    background-color: #c0d9d9; /* Change the input field's background color */
+    border: none; /* Remove the border */
+    padding: 10px; /* Add some padding */
+    width: 70%; /* Set the width of the input field */
+  }
+  
+  .center-button {
+    display: block; /* Set the button to a block element */
+    margin: 10px auto 0; /* Center the button horizontally and add some top margin */
+    background-color: #00b3b3; /* Change the button's background color */
+    color: white; /* Set the text color to white */
+    padding: 10px; /* Add some padding */
+  }
+</style>
+
+
+<div class="d-flex justify-content-center align-items-center">
+  <div class="card text-white bg-primary bg-lightcyan m-5" style="max-width: 18rem;">
+    <div class="card-header text-center">
+      <h2>{{city}}</h2>
+      <p><img [src]="iconURL" alt="weather image"></p>
+    </div>
+    <div class="card-body">
+      <p class="summary-text text-center">{{summary}} </p>
+      <p class="card-text">Temperature: {{temperature}} °C</p>
+      <p class="card-text">Humidity: {{humidity}} %</p>
+      <p class="card-text">Pressure: {{pressure}} hPa</p>
+      <p class="card-text">Wind: {{wind}} km/h</p>
+    </div>
+  </div>
+</div>
